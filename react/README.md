@@ -1,0 +1,2 @@
+react 可以不用npm包那一堆来写，react创建dom节点（虚拟），reactDOM去渲染成真实dom。
+reactDOM就是一个虚拟dom到真实dom的转换器
