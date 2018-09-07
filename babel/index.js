@@ -1,2 +1,2 @@
 const str='hello babel'
-document.body.innerHTML=str;
+document.write=str;

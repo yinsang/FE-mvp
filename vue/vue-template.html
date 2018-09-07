@@ -10,11 +10,13 @@
     <!-- 开发环境vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <div id="app">
-        {{ message }}
     </div>
     <script>
         var app = new Vue({
             el: '#app',
+            template:`
+              <div>This is a template</div>
+            `,
             data: {
                 message: 'Hello Vue!'
             }
