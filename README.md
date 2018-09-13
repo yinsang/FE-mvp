@@ -8,6 +8,12 @@
 
 进入每个目录，如果有package.json则需要先在该目录下在终端（cmd）里`npm i`一下
 
+webpack、eslint需要全局npm安装
+
+`npm install -g eslint`
+
+`npm install -g webpack`
+
 ## 目录(按照难度先后顺序)
 
 1. react
@@ -35,4 +41,11 @@
     webpack + vue-loader + webpack-dev-server
 
     在webpack中用vue-loader编译vue单文件
-    有webpack-dev-server帮助开发
+    有webpack-dev-server帮助开
+8. react-webpack-eslint
+    webpack + babel-loader + webpack-dev-server + eslint
+    包括eslint plugin的使用等
+
+9. vue-webpack-eslint
+    webpack + +babel-loader + vue-loader + webpack-dev-server + eslint
+    包括eslint plugin的使用等
