@@ -1,3 +1,0 @@
-react 可以不用npm包那一堆来写，react创建dom节点（虚拟），reactDOM去渲染成真实dom。
-reactDOM就是一个虚拟dom到真实dom的转换器
-react可以按照这种js的形式写，但是现代es6更推荐模块化，这时需要用es6的module（模块）
