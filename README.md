@@ -58,3 +58,8 @@ webpack、eslint需要全局npm安装
 
     webpack + +babel-loader + vue-loader + webpack-dev-server + eslint + typescript
     vue的ts支持暂时用vue-property-decorator,因为ts对vue的this识别很困难，后期vue+ts兼容较好时可以废弃vue-property-decorator
+
+11. react-webpack-eslint-typescript
+
+    webpack + +babel-loader + webpack-dev-server + eslint + typescript
+    事实证明react比vue对ts的支持好太多了啊，摔！
