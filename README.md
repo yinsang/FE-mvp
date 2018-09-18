@@ -143,3 +143,7 @@ webpack、eslint需要全局npm安装
     * preprocessors是预处理，需要用webpack进行配置
     * webpack 的打包和webpack官网一致
     还可以根据需求加入coverage等信息。
+
+14. vue-unitTest-karma-webpack
+    vue + webpack + karma + mocha + chai集大成者
+    注意files 和preprocessors的配置
