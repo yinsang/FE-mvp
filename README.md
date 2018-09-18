@@ -133,3 +133,13 @@ webpack、eslint需要全局npm安装
     ps： mocha等单元测试的内容请上网自己搜，[阮一峰mocha](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)
 
     es6需要babel来编译，chai是断言库，mocha是测试框架
+
+13. js-unitTest-karma-webpack
+    es6的单元测试demo
+    karma+mocha+webpack+chrome
+    坑点：
+    有时未报错，但是运行不成功，chrome里的debug按钮点击一下，进入debut.html 打开控制台，你就看到错误信息了！！！！！！
+    * files囊括需要包含的文件 例如'unit/**/*.test.js'
+    * preprocessors是预处理，需要用webpack进行配置
+    * webpack 的打包和webpack官网一致
+    还可以根据需求加入coverage等信息。
