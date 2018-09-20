@@ -147,3 +147,6 @@ webpack、eslint需要全局npm安装
 14. vue-unitTest-karma-webpack
     vue + webpack + karma + mocha + chai集大成者
     注意files 和preprocessors的配置
+15. react-webpack-eslint-karma-unitTest
+    react + webpack + karma + enzyme + unitTest
+    用常用的enzme对react进行单元测试。具体props等功能请看[github](https://github.com/airbnb/enzyme/)
