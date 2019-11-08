@@ -1,0 +1,20 @@
+{
+  "name": "js-unittest-coverage",
+  "version": "1.0.0",
+  "description": "```     npm install --global mocha     npm install chai -S     npm install istanbul -S ```",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover index.js",
+    "testMocha": "./node_modules/.bin/istanbul cover _mocha -- test/index.test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
