@@ -120,6 +120,9 @@ webpack、eslint需要全局npm安装
     vue的ts支持暂时用
 
     vue-property-decorator,因为ts对vue的this识别很困难，后期vue+ts兼容较好时可以废弃vue-property-decorator
+    重要强调：
+    ts里的`target:'es5'`会把ts文件里的es6编译成es5，也会把vue单文件中的`lang="ts"`编译成es5
+    但是如果vue里用script用普通es6，则需要babel来支持，不然vue里的es6还是es6.
 
 11. react-webpack-eslint-typescript
 

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 // ts-ignore
-// import App from './App.vue'
-
+// importApp from './App.vue'
 import { default as App } from './App.vue';
 import store from './vuex'
 new Vue({

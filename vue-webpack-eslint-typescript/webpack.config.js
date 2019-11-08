@@ -1,6 +1,9 @@
 const { VueLoaderPlugin } = require('vue-loader')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const tsImportPluginFactory = require('ts-import-plugin')
+
 module.exports = {
-  // entry: './src/index.ts',
+  entry: './src/index.ts',
   resolve: {
     extensions: ['.ts', '.js', '.vue']
   },
@@ -19,11 +22,25 @@ module.exports = {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: 'ts-loader',
-        options: { appendTsSuffixTo: [/\.vue$/] }
+        options: { appendTsSuffixTo: [/\.vue$/],
+          transpileOnly: true,
+          // getCustomTransformers: () => ({
+          //   before: [tsImportPluginFactory(
+          //     {
+          //       libraryName: '@mx/vix',
+          //       libraryDirectory: '',
+          //       style: true
+          //     }
+          //   )]
+          // }),
+          compilerOptions: {
+            module: 'es2015'
+          }
+        }
       },
       {
-        test: /\.less$/,
-        exclude: /(node_modules|bower_components)/,
+        test: /\.(le|c)ss$/,
+        // exclude: /(node_modules|bower_components)/,
         use: [
           'style-loader', 'css-loader', 'less-loader'
         ]
@@ -32,5 +49,6 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin()
+    // new BundleAnalyzerPlugin()
   ]
 }

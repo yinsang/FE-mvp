@@ -7,7 +7,7 @@ export default class App extends React.Component<HelloProps> {
   render () {
     const {compiler, framework} = this.props;
     return (
-      <div>hello, world, compiler is {compiler}, framework is {framework}</div>
+      <div>hello, world, 1111compiler is {compiler}, framework is {framework}</div>
     )
   }
 }
