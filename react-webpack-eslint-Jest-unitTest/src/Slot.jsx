@@ -1,6 +1,8 @@
 import React from 'react'
 export default (props)=>{
-  <div>
+  return (
+    <div>
     {props.children}
   </div>
+  )
 }

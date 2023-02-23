@@ -1,4 +1,6 @@
 import React from 'react'
+import './index.module.scss';
+
 export default class App extends React.Component {
   constructor(props){
     super(props)
@@ -16,12 +18,19 @@ export default class App extends React.Component {
   render () {
     const {framework} = this.state;
     return (
-      <div className="welcome-framework">
-        hello, {framework}
-        <button className="btn" onClick={this.handleBtnClick}>
-          改变state
-        </button>
-      </div>
+      <>
+        <div
+        //  className={styles['is-invalid']}
+        styleName="is-invalid"
+        >
+        
+        </div>
+        <div>11</div>
+        <div  
+        // className={styles.validationError}
+        styleName="validationError"
+        >123</div>
+      </>
     )
   }
 }

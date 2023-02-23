@@ -1,0 +1,7 @@
+.is-invalid{
+  color:red
+}
+.is-invalid~.validationError {
+  display: inline !important;
+  // color:red;
+}
