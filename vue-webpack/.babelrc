@@ -1,8 +1,0 @@
-// {
-//   "plugins": [
-//     [
-//       "import",
-//       { "libraryName": "@mx/vix", "libraryDirectory": "", "style": true }
-//     ]
-//   ]
-// }
